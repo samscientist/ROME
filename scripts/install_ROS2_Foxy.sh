@@ -19,4 +19,5 @@ sudo apt upgrade
 
 sudo apt install ros-foxy-desktop -y python3-argcomplete -y
 
-source /opt/ros/foxy/setup.bash
+echo source /opt/ros/foxy/setup.bash >> ~/.bashrc
+source ~/.bashrc
