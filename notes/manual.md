@@ -44,11 +44,13 @@ conda activate <environment name>
 
 conda install pip # Need to check if this command is really needed
 ```
+> *Currently, conda environment is useless. When executing Python file, prompts that no `Jetson` module is found. So, currently, working on the original environment.*
 
 #### Install Python Package
 ```bash
 sudo apt install python3-pip
-sudo pip3 install adafruit-circuitpython-lis3dh
+sudo pip install adafruit-circuitpython-lis3dh
+sudo pip install adafruit-circuitpython-motor
 ```
 
 #### Import Modules
@@ -58,6 +60,15 @@ import busio
 ```
 Error could occur by the Python code above even with proper package installation. Mainly caused from not available to find the modules. In this case, seek if the Python interpreter(or virtual environment) you're using is the one that the package is installed.
 
+
+### Activate RPLiDAR S2 - on ROS2
+
+
+```bash
+sudo apt update
+sudo apt install python3-colcon-common-extensions
+```
+[](https://colcon.readthedocs.io/en/released/user/installation.html)
 
 #### reference
 - [^1.1]: [Jetson Orin Nano Pinmap and how to detect I2C](https://jetsonhacks.com/nvidia-jetson-orin-nano-gpio-header-pinout)
