@@ -61,7 +61,6 @@ import busio
 Error could occur by the Python code above even with proper package installation. Mainly caused from not available to find the modules. In this case, seek if the Python interpreter(or virtual environment) you're using is the one that the package is installed.
 
 
-### Activate RPLiDAR S2 - on ROS2
 
 
 ```bash
