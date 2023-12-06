@@ -62,14 +62,7 @@ Error could occur by the Python code above even with proper package installation
 
 
 
-
-```bash
-sudo apt update
-sudo apt install python3-colcon-common-extensions
-```
-[](https://colcon.readthedocs.io/en/released/user/installation.html)
-
-#### reference
+## Reference
 - [^1.1]: [Jetson Orin Nano Pinmap and how to detect I2C](https://jetsonhacks.com/nvidia-jetson-orin-nano-gpio-header-pinout)
 - [⭐ How to use PCA9685](https://cdn-learn.adafruit.com/downloads/pdf/micropython-hardware-pca9685-dc-motor-and-stepper-driver.pdf#page=8)
     - ['Adafruit_CircuitPython_Bundle' Repo](https://github.com/adafruit/Adafruit_CircuitPython_Bundle)
@@ -78,7 +71,7 @@ sudo apt install python3-colcon-common-extensions
 [^1.2]: [How to connect the pins](https://learn.adafruit.com/16-channel-pwm-servo-driver/hooking-it-up)
 [^1.3]: [What voltage to supply to PCA9685 - '3.3V or 5V both works'](https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf#page=39)
 [^4]: [When `conda activate` is not working](https://github.com/conda/conda/issues/7980#issuecomment-441358406)
-[]: [Why some files in Linux doesn't have extension](https://askubuntu.com/a/1188034)
+[]: [Why some files in Linux doesn't have extension(like `python3.9`)](https://askubuntu.com/a/1188034)
 
 
 #### Tips
