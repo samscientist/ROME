@@ -4,10 +4,12 @@
 
 $$
 \begin{CD}
-    \text{Place packages' source in `src/` directory} \\
-    @VbuildVV \\
+    \text{Place packages' source in ``src/" directory} \\
+    @VVV \\
+    \text{Build}\\
+    @V\text{Source setup script}VV \\
     \begin{CD}
-        \text{Source setup script} @>launch>> \text{Run}
+        \text{Ready to launch} @>launch>> \text{Run}
     \end{CD}
 \end{CD}
 $$
@@ -33,7 +35,7 @@ $$
         ...
 ```
 
-### After Build
+### Build
 
 - **Build Command:** `catkin_make`<br/>
   └── *// must be executed while the Shell's working directory is set to the ROS workspace folder*
@@ -55,6 +57,18 @@ $$
     │
     ...*same as before the build*
 
+```
+
+### Run
+
+**Source setup script**
+```bash
+source ./devel/setup.bash
+```
+
+**Launch**
+```bash
+roslaunch <package name> <launch file>
 ```
 
 ## ROS2
@@ -98,7 +112,7 @@ workspace_folder/
 ```
 
 
-### After Build
+### Build
 - **Build Command:** `colcon build`<br/>
   └── *// must be executed while the Shell's working directory is set to the ROS workspace folder*
 - **New Directories**
@@ -121,3 +135,17 @@ workspace_folder/
     ...*same as before the build*
 
 ```
+
+### Run
+
+**Source setup script**
+```bash
+source ./install/setup.bash
+```
+
+**Launch**
+```bash
+ros2 launch <package name> <launch file>
+```
+
+## Examples
